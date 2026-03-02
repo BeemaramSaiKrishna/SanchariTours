@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Contact - Sanchari Tours</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="container">
+<a class="navbar-brand fw-bold" href="index.html"> <i class="fa-solid fa-person-walking-luggage"></i> Sanchari Tours</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li><a class="nav-link nav-custom" href="index.html">Home</a></li>
+<li><a class="nav-link nav-custom" href="#categories">Packages</a></li>
+<li><a class="nav-link nav-custom" href="about.html">About</a></li>
+<li><a class="nav-link nav-custom active" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section class="container my-5">
+<div class="text-center mb-4 cheader">
+    <h2 class="fw-bold">Book your trip</h2>
+    <p class="text-muted">
+        Fill out the form below and we'll get back to you as soon as possible.
+    </p>
+</div>
+
+<form onsubmit="return submitForm()" class="p-4 shadow rounded">
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<label>Name</label>
+<input type="text" id="name" class="form-control" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Mobile Number</label>
+<input type="tel" id="mobile" class="form-control" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Email Address</label>
+<input type="email" id="email" class="form-control" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Travel Category</label>
+<select id="category" class="form-select" required>
+<option value="">Select Category</option>
+<option value="Group">Group</option>
+<option value="International">International</option>
+<option value="Domestic">Domestic</option>
+</select>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Destination</label>
+<select id="destination" class="form-select" required>
+<option value="">Select Destination</option>
+<option value="Chardham">Chardham</option>
+<option value="Manali">Manali</option>
+<option value="Kerala">Kerala</option>
+<option value="Ooty">Ooty</option>
+<option value="Goa">Goa</option>
+<option value="Europe">Europe</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Bali">Bali</option>
+<option value="Dubai">Dubai</option>
+</select>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>No. of People</label>
+<input type="number" id="people" class="form-control" min="1" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Duration</label>
+<select id="duration" class="form-select" required>
+<option value="">Select Duration</option>
+<option>1-3 Days</option>
+<option>4-7 Days</option>
+<option>7-10 Days</option>
+<option>10+ Days</option>
+</select>
+</div>
+
+<div class="col-md-12 mb-3">
+<label>Special Requirements</label>
+<textarea id="message" class="form-control" rows="3"></textarea>
+</div>
+
+</div>
+
+<button class="btn btn-primary w-100">Submit</button>
+
+</form>
+
+<div id="successMsg" class="text-center mt-3 text-success fw-bold"></div>
+
+</section>
+<footer class="bg-dark text-white text-center p-3">
+<p>© 2026 Sanchari Tours</p>
+</footer>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
